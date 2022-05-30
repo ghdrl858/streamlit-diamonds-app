@@ -3,12 +3,14 @@ import pandas as pd
 from PIL import Image
 
 def run_home() :
-    st.write('''# What is a ***Diamonds***?
+    st.write('''## What is a ***Diamonds***?
     
-##### ° 광물의 종류 중 하나, 탄소 하나의 원소로 이루어진 원소 광물입니다.
+###### ° 이 웹 대시보드는 ***다이아몬드***에 대해 다룰 것입니다.
+###### ° 해당 Dataset에 컬럼들에 의미를 모를 수 있으니 ***설명하는 페이지***를 만들것이며,
+###### ° ***그래프***를 통해 중요 컬럼들을 확인 및 ***인공지능 학습***을 통해 보여줄 것입니다.
+
     
     ''')
-
 
     image = Image.open('image/diamonds.jpg')
     st.image(image, use_column_width=True)

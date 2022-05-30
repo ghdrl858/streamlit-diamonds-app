@@ -13,10 +13,10 @@ def main() :
     with st.sidebar:
         menu = option_menu('Menu',['Home','Info','Chart', 'ML'], menu_icon='caret-down-fill', icons = ['bi bi-house-fill','bi bi-info-circle-fill',"bi bi-bar-chart-line-fill", 'bi bi-tools'], default_index=0,
                          styles={
-        "container": {"padding": "5!important", "background-color": "#16B4F2", },
+        "container": {"padding": "5!important", "background-color": "#5670BF", },
         "icon": {"color": "white", "font-size": "25px"}, 
-        "nav-link": {'color' : 'white', "font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#F2CB05"},
-        "nav-link-selected": {"background-color": "#24BF4B"}
+        "nav-link": {'color' : 'white', "font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#6AB9D9"},
+        "nav-link-selected": {"background-color": "#4563BF"}
     })
     if menu == 'Home':
         run_home()
