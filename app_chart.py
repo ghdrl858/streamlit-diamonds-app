@@ -6,6 +6,7 @@ import seaborn as sns
 
 def run_chart() :
     st.header(' Diamonds_Chart')
+    st.write('''##### ° 각 컬럼에 대한 그래프를 확인할 수 있는 페이지입니다.''')
 
     # dataset 불러오기
     df = sns.load_dataset("diamonds")

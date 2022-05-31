@@ -5,10 +5,7 @@ from PIL import Image
 
 def run_info() :
     st.header('Diamonds_Info')
-    st.write('''##### ° 각 컬럼에 의미를 모를 수 있기에 간단히 정보를 전달하고자 만든 페이지입니다.
-    
-    
-    ''')
+    st.write('''##### ° 각 컬럼에 의미를 모를 수 있기에 간단히 정보를 전달하고자 만든 페이지입니다.''')
 
     # dataset 불러오기
     df = sns.load_dataset("diamonds")

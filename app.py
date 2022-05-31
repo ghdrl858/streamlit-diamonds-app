@@ -28,11 +28,13 @@ def main() :
         run_ml()
    
     # 이미지 구현
-    # with st.sidebar :
-    #     st.write('')
-    #     st.write('')
-    #     image = Image.open('image/headphones.png')
-    #     st.image(image, use_column_width=True)
+    with st.sidebar :
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        image = Image.open('image/dia.png')
+        st.image(image, use_column_width=True)
 
 if __name__ == '__main__' :
     main()
