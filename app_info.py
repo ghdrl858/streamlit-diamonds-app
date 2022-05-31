@@ -5,6 +5,10 @@ from PIL import Image
 
 def run_info() :
     st.header('Diamonds_Info')
+    st.write('''##### ° 각 컬럼에 의미를 모를 수 있기에 간단히 정보를 전달하고자 만든 페이지입니다.
+    
+    
+    ''')
 
     # dataset 불러오기
     df = sns.load_dataset("diamonds")
@@ -12,8 +16,10 @@ def run_info() :
     # 필요한 컬럼만 사용하기 위한 작업
     df_columns = df.columns[ : 6]
 
+    # selectbox를 이용해 컬럼 선택
     my_choice = st.selectbox('Choice the Columns', df_columns)
 
+    # 각 컬럼들 기능 정리
     if my_choice == df.columns[0] :
         st.write('')
         if st.checkbox('carat_columns') :
@@ -83,20 +89,33 @@ def run_info() :
             image = Image.open('image/diamonds_clarity.webp')
             st.image(image, use_column_width=True)
     
-    # elif my_choice == df.columns[4] :
-    #     if st.checkbox('carat_columns') :
-    #         st.dataframe(df['carat'].head(15))
-    #     if st.checkbox('carat_info') :
+    elif my_choice == df.columns[4] :
+        st.write('')
+        if st.checkbox('depth_columns') :
+            st.dataframe(df['depth'].head(15))
+            st.write('')
+        if st.checkbox('depth_info') :
 
-    #         st.write('''''')
-    #         image = Image.open('image/carat.webp')
-    #         st.image(image, use_column_width=True)
+            st.write('''###### ° ***depth***는 말 그대로 깊이를 의미합니다.
+            
+###### ° 사진처럼 많이 봐야할 부분이 많지만 깊이는 사진에 ***'total depth'*** 를 주로 확인합니다.
+###### ° 59% ~ 62.3%면 Excellent, 58% ~ 58.9%나 62.4% ~ 63.5% 정도면 Very Good이라고합니다.
+            
+            ''')
+            image = Image.open('image/diamonds_depth.png')
+            st.image(image, use_column_width=True)
 
-    # elif my_choice == df.columns[5] :
-    #     if st.checkbox('carat_columns') :
-    #         st.dataframe(df['carat'].head(15))
-    #     if st.checkbox('carat_info') :
+    elif my_choice == df.columns[5] :
+        st.write('')
+        if st.checkbox('table_columns') :
+            st.dataframe(df['table'].head(15))
+            st.write('')
+        if st.checkbox('tlble_info') :
 
-    #         st.write('''''')
-    #         image = Image.open('image/carat.webp')
-    #         st.image(image, use_column_width=True)
+            st.write('''###### ° 다이아몬드 윗면의 평편한 부분을 테이블이라고 합니다.
+            
+###### ° 윗면 즉, 테이블의 모양은 연마 과정중에서 발생합니다.
+###### ° 52% ~ 62%는 ***Excellent***, 50% ~ 66%까지는 ***Very Good***으로 테이블의 등급이 면적 %에 따라 나뉩니다.
+            ''')
+            image = Image.open('image/diamonds_table.jpg')
+            st.image(image, use_column_width=True)
