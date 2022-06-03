@@ -8,8 +8,15 @@ from app_chart import run_chart
 from app_ml import run_ml
 
 def main() :
-    # 화면 넒어지게하기
-    st.set_page_config(layout="wide")
+    st.set_page_config(
+     page_title='Diamonds_page',
+     page_icon="💎",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'Get Help': 'https://github.com/ghdrl858/streamlit-diamonds-app',
+         'Report a bug': 'https://ai0418.tistory.com/',
+     })
 
     # 옵션 메뉴 꾸미기 코드
     with st.sidebar:
