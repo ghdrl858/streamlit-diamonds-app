@@ -8,6 +8,8 @@ from app_chart import run_chart
 from app_ml import run_ml
 
 def main() :
+    # 화면 넒어지게하기
+    st.set_page_config(layout="wide")
 
     # 옵션 메뉴 꾸미기 코드
     with st.sidebar:
