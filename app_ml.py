@@ -15,12 +15,12 @@ def run_ml():
     cut_encoder = joblib.load('data/cut_encoder.pkl')
     color_encoder = joblib.load('data/color_encoder.pkl')
     clarity_encoder = joblib.load('data/clarity_encoder.pkl')
-    model = joblib.load('data/model.pkl')
-
-    # cut, color, clarity를 인코딩 시킨거 학습시키기
-    df['cut'] = cut_encoder.fit_transform(df['cut'])
-    df['color'] = color_encoder.fit_transform(df['color'])
-    df['clarity'] = clarity_encoder.fit_transform(df['clarity'])
+    model = joblib.load('data/model.pkl')\
+    
+    # cut, color, clarity를 인코딩 시킨거 실행시키기
+    df['cut'] = cut_encoder.transform(df['cut'])
+    df['color'] = color_encoder.transform(df['color'])
+    df['clarity'] = clarity_encoder.transform(df['clarity'])
 
     # 컬럼을 선택해서 해당 값을 확인
     column_list = st.multiselect('Choice Columns', df.columns[ : 6])
