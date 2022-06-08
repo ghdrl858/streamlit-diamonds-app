@@ -54,11 +54,12 @@ def run_chart() :
                         ''')
         st.write('')
         if st.button('cut_chart 1') :
-            st.write('''###### ✔️ '***cut***' 과 '***price***' 에 그래프이며, 평균값을 히스토그램으로 나타냈습니다. 
-                
-###### ✔️ Primium이 수치가 높고 Good과 Very Good이 거의 비슷하다고 볼 수 있습니다. 
+            st.write('''###### ✔️ '***cut***' 정리된 테이블을 그래프로 표현했습니다.
+
+###### ✔️ 테이블과 그래프를 같이 확인함으로서 한눈에 비교하기 쉬울것입니다.
             ''')
-            cut1 = px.histogram(df, x="cut", y="price", histfunc="avg")
+            cut_count = df["cut"].value_counts()
+            cut1 = px.bar(cut_count, text = cut_count, title="cut count")
             st.plotly_chart(cut1)
     
     if my_choice == df.columns[2] :
