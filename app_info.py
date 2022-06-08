@@ -17,6 +17,7 @@ def run_info() :
     my_choice = st.selectbox('Choice the Columns', df_columns)
 
     # 각 컬럼들 기능 정리
+    # carat 컬럼 정리
     if my_choice == df.columns[0] :
         st.write('')
         if st.checkbox('carat_columns') :
@@ -31,6 +32,7 @@ def run_info() :
             image = Image.open('image/carat.webp')
             st.image(image, use_column_width=True)
 
+    # cut 컬럼 정리
     elif my_choice == df.columns[1] :
         st.write('')
         if st.checkbox('cut_columns') :
@@ -47,6 +49,7 @@ def run_info() :
             video_file = open('video/diamonds_video.mp4', 'rb')
             st.video(video_file)
 
+    # color 컬럼 정리
     elif my_choice == df.columns[2] :
         st.write('')
         if st.checkbox('color_columns') :
@@ -63,6 +66,7 @@ def run_info() :
             image = Image.open('image/diamonds_color.webp')
             st.image(image, use_column_width=True)
 
+    # clarity 컬럼 정리
     elif my_choice == df.columns[3] :
         st.write('')
         if st.checkbox('clarity_columns') :
@@ -86,6 +90,7 @@ def run_info() :
             image = Image.open('image/diamonds_clarity.webp')
             st.image(image, use_column_width=True)
     
+    # depth 컬럼 정리
     elif my_choice == df.columns[4] :
         st.write('')
         if st.checkbox('depth_columns') :
@@ -102,6 +107,7 @@ def run_info() :
             image = Image.open('image/diamonds_depth.png')
             st.image(image, use_column_width=True)
 
+    # table 컬럼 정리
     elif my_choice == df.columns[5] :
         st.write('')
         if st.checkbox('table_columns') :

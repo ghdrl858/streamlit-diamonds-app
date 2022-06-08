@@ -12,5 +12,6 @@ def run_home() :
     
     ''')
 
+    # 이미지 출력하기
     image = Image.open('image/diamonds.jpg')
     st.image(image, use_column_width=True)
