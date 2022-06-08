@@ -29,7 +29,7 @@
 # 💻 작업진행률
  ✔️ 1일차 : dataset 찾기 결과, seaborn 라이브러리에 있는 자체 dataset인 diamondse로 결정 및 dataset 정리. dataset 확인 및 그래프 작업
 
- ✔️ 2일차 : 인공지능 작업. 3개의 컬럼의 문자열 값이 있어 LabelEncoder로 숫자 치환 작업 사용한 모델은 ExtraTreesRegressor. 예측값은 히트맵으로 표현할 예정
+ ✔️ 2일차 : 인공지능 작업. 3개의 컬럼의 문자열 값이 있어 LabelEncoder로 숫자 치환 작업 사용한 모델은 ExtraTreesRegressor. 예측값은 scatter 그래프로 표현할 예정
 
  ✔️ 3일차 : streamlit 작업, 메뉴 구성 및 color 구성 조합 찾기, 웹 대시보드 일부 작업, app_home, app_info 중간까지 작업
 
