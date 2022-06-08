@@ -6,7 +6,7 @@
  ✔️ 데이터 작업은 'Google Colab' 으로 작업, 'Streamlit' 사용으로 웹 대시보드를 만들어 시각화하기 위해 'Visual Studio Code' 로 작업한 데이터를 옮기면서 'Streamlit' 에 문법에 맞게 만드는 작업을 했습니다.
  
  ➡️ 사용 라이브러리 :  
- '''python
+ ''' python
  from streamlit_option_menu import option_menu
  '''
  ➡️ 출처 : seaborn 라이브러리에 자체 diamonds Dataset을 이용했습니다.
