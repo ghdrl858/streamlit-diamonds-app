@@ -1,4 +1,4 @@
-# 💎 streamlit-diamonds-app
+# streamlit-diamonds-app
  ✔️ dataset을 찾아보던중 seaborn라이브러리에 diamonds라는 자체 dataset이 있었고, 컬럼과 데이터가 깔끔해서 사용하기로 결정했습니다.
 
  ✔️ carat, cut, color, clarity 같은 컬럼들이 price에 얼마나 영향을 주는지가 궁금해서 예측하기로 했습니다.
