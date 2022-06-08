@@ -68,7 +68,7 @@ pip install matplotlib
 - ### app_chart.py
 ✔️ 중요한 각 컬럼들에 데이터로 그린 그래프를 표현하는 페이지입니다.
 
-✔️ 그래프는 *plotly.express* 라이브러리를 이용해 표현했습니다.
+✔️ 그래프는 *plotly.express* 라이브러리를 이용해 표현했고, 설명을 통해 그래프를 이해하기 쉽게 정리했습니다.
 
 ![app_Chart](https://user-images.githubusercontent.com/105832443/172630772-a06fac93-0877-48e1-8d2b-2e0e4f4e695c.png)
 
